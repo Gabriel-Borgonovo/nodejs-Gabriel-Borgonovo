@@ -1,18 +1,11 @@
-const fs = require('fs');
-const path = './segundo-entregable/products.json';
+import fs from 'fs';
+const path = './entregable.2/products.json';
 
-
-/**Esta es la clase que administra los productos. Tiene métodos para agregar, 
- * obtener, actualizar y eliminar productos. */
 class ProductManager {
     constructor(path) {
       this.path = path;
     }
   
-    /**Este método agrega un nuevo producto al archivo JSON. 
-     * Verifica primero si un producto con el mismo código ya existe y si es así, 
-     * devuelve un mensaje de error. Si no existe, agrega el producto y escribe el 
-     * archivo JSON actualizado. */
     async addProduct(product) {
         let products = await this.getProducts();
         // Verifica si el producto ya existe en el archivo JSON
@@ -39,7 +32,7 @@ class ProductManager {
     async getProductById(id) {
       let products = await this.getProducts();
       let result = products.filter(product => product.id === id);
-      return console.log('result by id', result);
+      return result;
     }
   
     /**Este método actualiza un producto existente en el archivo JSON.  */
@@ -71,7 +64,7 @@ class ProductManager {
 /**Estas son las constantes que definen los productos. */
 
 const product1 = {
-    code: 01,
+    code: 1,
     title: 'Manzana',
     description: 'Es una fruta',
     thumbnail: 'image', 
@@ -80,16 +73,16 @@ const product1 = {
 }
 
 const product2 = {
-    code: 02,
+    code: 2,
     title: 'Banana',
-    description: 'Es una fruta actualizada',
+    description: 'Es una fruta',
     thumbnail: 'image', 
-    price: 180,
+    price: 300,
     stock: 50,
 }
 
 const product3 = {
-    code: 03,
+    code: 3,
     title: 'kiwi',
     description: 'Es una fruta',
     thumbnail: 'image', 
@@ -97,6 +90,68 @@ const product3 = {
     stock: 50,
 }
 
+const product4 = {
+    code: 4,
+    title: 'Ananá',
+    description: 'Es una fruta',
+    thumbnail: 'image', 
+    price: 300,
+    stock: 30,
+}
+
+const product5 = {
+    code: 5,
+    title: 'Melon',
+    description: 'Es una fruta',
+    thumbnail: 'image', 
+    price: 500,
+    stock: 100,
+}
+
+const product6 = {
+    code: 6,
+    title: 'Papa',
+    description: 'Es un tuberculo',
+    thumbnail: 'image', 
+    price: 200,
+    stock: 150,
+}
+
+const product7 = {
+    code: 7,
+    title: 'Lechuga',
+    description: 'Es una verdura de hojas',
+    thumbnail: 'image', 
+    price: 120,
+    stock: 50,
+}
+
+const product8 = {
+    code: 8,
+    title: 'Achicoria',
+    description: 'Es una verdura de hojas',
+    thumbnail: 'image', 
+    price: 180,
+    stock: 20,
+}
+
+const product9 = {
+    code: 9,
+    title: 'Limon',
+    description: 'Es una fruta',
+    thumbnail: 'image', 
+    price: 250,
+    stock: 90,
+}
+
+const product10 = {
+    code: 10,
+    title: 'Jengibre',
+    description: 'Es una raíz',
+    thumbnail: 'image', 
+    price: 580,
+    stock: 15,
+}
 
 /**Esta es la función principal que se ejecuta al correr el código. 
  * Crea una nueva instancia de la clase ProductManager y llama a sus métodos 
@@ -109,14 +164,17 @@ async function main(){
     await productManager.addProduct(product1);  
     await productManager.addProduct(product2);  
     await productManager.addProduct(product3);  
-
-    await productManager.getProductById(2);
-
-   // await productManager.deleteProduct(1);
-   await productManager.updateProduct(2, product2);
-   await productManager.getProductById(2);
-
-   console.log('obtener productos: ', await productManager.getProducts());
+    await productManager.addProduct(product4); 
+    await productManager.addProduct(product5); 
+    await productManager.addProduct(product6); 
+    await productManager.addProduct(product7); 
+    await productManager.addProduct(product8); 
+    await productManager.addProduct(product9); 
+    await productManager.addProduct(product10); 
 }
 
 main();
+
+export default ProductManager;
+
+/**28:46 */

@@ -1,0 +1,92 @@
+[
+  {
+    "code": 1,
+    "title": "Manzana",
+    "description": "Es una fruta",
+    "thumbnail": "image",
+    "price": 120,
+    "stock": 50,
+    "id": 1
+  },
+  {
+    "code": 2,
+    "title": "Banana",
+    "description": "Es una fruta",
+    "thumbnail": "image",
+    "price": 180,
+    "stock": 50,
+    "id": 2
+  },
+  {
+    "code": 3,
+    "title": "kiwi",
+    "description": "Es una fruta",
+    "thumbnail": "image",
+    "price": 180,
+    "stock": 50,
+    "id": 3
+  },
+  {
+    "code": 4,
+    "title": "Ananá",
+    "description": "Es una fruta",
+    "thumbnail": "image",
+    "price": 300,
+    "stock": 30,
+    "id": 4
+  },
+  {
+    "code": 5,
+    "title": "Melon",
+    "description": "Es una fruta",
+    "thumbnail": "image",
+    "price": 500,
+    "stock": 100,
+    "id": 5
+  },
+  {
+    "code": 6,
+    "title": "Papa",
+    "description": "Es un tuberculo",
+    "thumbnail": "image",
+    "price": 200,
+    "stock": 150,
+    "id": 6
+  },
+  {
+    "code": 7,
+    "title": "Lechuga",
+    "description": "Es una verdura de hojas",
+    "thumbnail": "image",
+    "price": 120,
+    "stock": 50,
+    "id": 7
+  },
+  {
+    "code": 8,
+    "title": "Achicoria",
+    "description": "Es una verdura de hojas",
+    "thumbnail": "image",
+    "price": 180,
+    "stock": 20,
+    "id": 8
+  },
+  {
+    "code": 9,
+    "title": "Limon",
+    "description": "Es una fruta",
+    "thumbnail": "image",
+    "price": 250,
+    "stock": 90,
+    "id": 9
+  },
+  {
+    "code": 10,
+    "title": "Jengibre",
+    "description": "Es una raíz",
+    "thumbnail": "image",
+    "price": 580,
+    "stock": 15,
+    "id": 10
+  }
+]

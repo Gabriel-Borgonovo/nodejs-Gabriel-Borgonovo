@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "primer-entregable-gabriel_borgonovo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-Borgonovo/nodejs-Gabriel-Borgonovo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabriel-Borgonovo/nodejs-Gabriel-Borgonovo/issues"
+  },
+  "homepage": "https://github.com/Gabriel-Borgonovo/nodejs-Gabriel-Borgonovo#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
